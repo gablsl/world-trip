@@ -1,7 +1,7 @@
 import { Banner } from '@/components/Banner/banner';
 import { Caracteristicas } from '@/components/Caracteristicas/index';
 import { Separador } from '@/components/Separador';
-import { Flex } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 
 export default function Home() {
     return (
@@ -9,6 +9,16 @@ export default function Home() {
             <Banner />
             <Caracteristicas />
             <Separador />
+
+            <Heading
+                textAlign='center'
+                fontWeight='500'
+                mb={['5', '14']}
+                fontSize={['lg', '3xl', '4xl']}
+            >
+                Vamos nessa? <br />
+                Então escolha seu continente
+            </Heading>
         </Flex>
     );
 }
