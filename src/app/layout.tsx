@@ -2,6 +2,9 @@ import { Header } from '@/components/Header/header';
 import { Providers } from '@/lib/Providers';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const poppins = Poppins({
     subsets: ['latin'],
