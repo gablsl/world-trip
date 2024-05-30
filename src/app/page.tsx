@@ -1,7 +1,13 @@
 import { Banner } from '@/components/Banner/banner';
 import { Caracteristicas } from '@/components/Caracteristicas/index';
 import { Separador } from '@/components/Separador';
+import { Slider } from '@/components/Slider/slider';
 import { Flex, Heading } from '@chakra-ui/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import '../styles/slider.scss';
 
 export default function Home() {
     return (
@@ -19,6 +25,8 @@ export default function Home() {
                 Vamos nessa? <br />
                 Então escolha seu continente
             </Heading>
+
+            <Slider />
         </Flex>
     );
 }
